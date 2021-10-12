@@ -1,0 +1,91 @@
+.card-body {
+    width: inherit;
+    padding: 5px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card {
+    max-width: 150px;
+    margin: 15px;
+    padding: inherit;
+    background-color: #f5f2ed;
+    color: black;
+}
+
+.card img {
+    height: 200px;
+
+}
+
+#bookSearch {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.holdingBox {
+    justify-content: space-between; 
+}
+
+#summaryList { 
+    width: 48%; 
+    min-height: 150px; 
+    padding: 0.5em; 
+    margin: 10px; 
+    text-align: center;
+    border-radius: .3rem;
+    height: auto;
+}
+
+#yesList { 
+    width: 48%; 
+    min-height: 150px; 
+    padding: 0.5em; 
+    margin: 10px; 
+    text-align: center;
+    border-radius: .3rem;
+    height: auto;
+}
+#yesList h4, #summaryList h4 {
+    flex-basis: 100%;
+}
+
+.jumbotron, #summaryList, #yesList  {
+    background: url(images/books.jpg) no-repeat center center fixed;
+    background-size: cover;
+    height: 100%;
+    color: white;
+}
+
+.dropOnActive {
+    background-color: #fce6d7;
+    flex-wrap: wrap;
+    margin: inherit;
+}
+
+.holdOnActive {
+    background-color: #ebb998;
+    flex-wrap: wrap;
+    margin: inherit;
+}
+
+
+.holdOnActive, .dropOnActive > .card {
+    text-align: left;
+} 
+
+body {
+    background: url(images/Stuttgart-City-Library-1.jpg) no-repeat center center fixed;
+    background-size: cover;
+    height: 100%;
+
+}
+
+.card .ui-draggable .ui-draggable-handle .holdOnActive .ui-draggable-disabled {
+    width: 150px;
+}
+
+.btn {
+    background-color:  #6a121e;
+    border: #6a121e;
+}
